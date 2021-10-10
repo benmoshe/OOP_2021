@@ -3,5 +3,7 @@ The OOP course (Object Oriented Programming & Design. - Ariel University) is des
 This repository is dedicated for Object-Oriented Programming course. It contains Class and TA examples, as well as many assignments related examples. The main motivation for this repository is teaching and education of students to become good programmers and even better software designers.
 
 Code standards: 
+
 Java: https://github.com/twitter-archive/commons/blob/master/src/java/com/twitter/common/styleguide.md
+
 Python: https://google.github.io/styleguide/pyguide.html
