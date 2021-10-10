@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+interface Shape {
+     +void move(Point_2D vec)
+     +double area();
+     +public double perimeter();
+     +boolean isInSide(Point_2D ot);
+}
+
+class Point_2D implements Shape {
+    public static final Point_2D _OO = new Point_2D(0,0);
+    -double _x,_y;
+}
+class Circle_2D implements Shape {
+    -double _radius;
+    private Point_2D _center;
+
+    public Circle_2D(Point_2D cen, double rad)
+}
+
+
+@enduml
