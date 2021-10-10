@@ -1,5 +1,6 @@
-package class5;
-
+import class5.BST;
+import class5.Point3D;
+import class5.Point_Comp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
