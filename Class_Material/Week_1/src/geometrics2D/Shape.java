@@ -1,7 +1,7 @@
 package geometrics2D;
 
 /**
- * This interface represents a simple geometric shape,
+ * This interface represents a simple 2D geometric shape,
  * with area, distance (Point2D),
  */
 public interface Shape {
