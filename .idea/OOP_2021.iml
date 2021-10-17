@@ -10,6 +10,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_5-6/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_5-6/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_1/T1-ItaiLash/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Assignments/Ex0/libs" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Assignments/Ex0/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -45,5 +47,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Ex0_Simulator_V0.0 (2)" level="project" />
   </component>
 </module>
