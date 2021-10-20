@@ -1,3 +1,5 @@
+import vehicle.Driveble;
+
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +13,7 @@ public class main {
         Car mitsubishSpaceStar = new Car("Misubushi","space-star","000-38-000",865,173,5);
         Bus volvo9900 = new Bus("Volvo","9900","656-55-103",26500 ,120 ,52);
 
-        HashMap<String ,Driveble> studentLot = new HashMap<>();
+        HashMap<String ,Driveble> studentLot = new HashMap<String ,Driveble>();
 
         studentLot.put(kiaPicanto.getRegistrationPlate(),kiaPicanto);
         studentLot.put(shevroletSpark.getRegistrationPlate(),shevroletSpark);
@@ -56,7 +58,7 @@ public class main {
     }
 
     public static void main(String[] args) {
-        System.out.println("\n***************************Driveble***************************\n");
+        System.out.println("\n***************************vehicle.Driveble***************************\n");
         ArrayList <Driveble> drivebleArrayList ;
         drivebleArrayList = generateDrivableList();
         for(Driveble d :drivebleArrayList){
