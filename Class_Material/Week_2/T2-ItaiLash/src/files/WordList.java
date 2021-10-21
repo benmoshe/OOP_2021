@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class WordList {
-
     /**
      * @param num   the number to be padd
      * @param desiredLength the length of the desired string to be retuned
@@ -40,18 +39,13 @@ public class WordList {
             }
             bw.close();
         }
-
         catch (IOException e) {
             e.printStackTrace();
             System.out.println("IOException");
         }
-
         catch (RuntimeException r) {
             r.printStackTrace();
             System.out.println("RuntimeException");
-        }
-
-        catch (Exception e){
         }
     }
 
@@ -70,7 +64,6 @@ public class WordList {
         }
     }
     public static void main(String[] args) {
-
         Path path = Paths.get("./passwords");
         try {
             Files.createDirectory(path);
@@ -78,9 +71,9 @@ public class WordList {
             e.printStackTrace();
         }
         String passF = "./passwords/password.txt";
-        String idF  = "./passwords/id.txt";
+        //String idF  = "./passwords/id.txt";
         generateList(passF,9999);
-        generateList(idF,999999999);
+//        generateList(idF,999999999);
         printFile(passF);
 
     }

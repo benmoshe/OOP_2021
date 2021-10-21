@@ -50,7 +50,6 @@ public abstract class MotorVehicle implements java.io.Serializable {
         this.registrationPlate = registrationPlate;
         this.weight = weight;
         this.seats = seats;
-
     }
 
     @Override
@@ -197,8 +196,22 @@ public abstract class MotorVehicle implements java.io.Serializable {
                 ", registrationPlate='" + registrationPlate + '\'' +
                 ", weight=" + weight +
                 ", maxSpeed=" + maxSpeed +
-                ", seats=" + seats +
+                " seats=" + seats +
                 ", engine=" + engine +
                 '}';
+    }
+
+    public static void main(String[] args) {
+        try {
+            Bus b = new Bus("", "", "", -100, 2, -1);
+        }
+        catch(RuntimeException e){
+            System.out.println(e);
+            e.printStackTrace();
+        }
+        System.out.println("rest of code 1");
+        System.out.println("rest of code 2");
+        System.out.println("rest of code 3");
+        System.out.println("rest of code 4");
     }
 }

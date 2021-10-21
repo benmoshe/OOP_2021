@@ -110,11 +110,11 @@ public  class MotorJson {
     }
 
     public static void main(String[] args) {
-        carSerializeVehicle();
-        carDeSerialization();
-//        nestedCarSerializeVehicle();
-//        nestedCarDeSerialization();
-//        nestedCarDeSerializationAutoFail();
+//        carSerializeVehicle();
+//        carDeSerialization();
+//       nestedCarSerializeVehicle();
+//       nestedCarDeSerialization();
+        nestedCarDeSerializationAutoFail();
 //        nestedCarDeSerializationManual();
     }
 }
