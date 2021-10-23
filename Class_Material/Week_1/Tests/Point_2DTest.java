@@ -1,6 +1,5 @@
 import geometrics2D.Point_2D;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class Point_2DTest {
@@ -23,9 +22,11 @@ class Point_2DTest {
 
     @Test
     void moveTest() {
+        // make sure you can come up with a proper testing strategy for this method
     }
 
     @Test
     void areaTest() {
+        // make sure you can come up with a proper testing strategy for this method
     }
 }

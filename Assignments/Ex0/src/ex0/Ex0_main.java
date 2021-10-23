@@ -13,14 +13,14 @@ public class Ex0_main {
     public static void main(String[] ar) {
         String codeOwner = codeOwner();
         Simulator_A.setCodeOwner(codeOwner);
-        int stage = 2;  // any case in [0,9].
+        int stage = 9;  // any case in [0,9].
         System.out.println("Ex0 Simulator: isStarting, stage="+stage+") ... =  ");
-        String callFile = null; // use the predefined cases [1-9].
+        String callFile = null; // use the predefined cases [0-9].
         // String callFile = "data/Ex0_stage_2__.csv"; //
         Simulator_A.initData(stage, callFile);  // init the simulator data: {building, calls}.
 
-        // ElevatorAlgo ex0_alg = new ShabatElevAlgo(Simulator_A.getBuilding());  // The simplest algo ever (Shabat Elev).
-        // ElevatorAlgo ex0_alg = new ShabatElev2Algo(Simulator_A.getBuilding()); // Shabat Elev with a minor twist
+      //   ElevatorAlgo ex0_alg = new ShabatElevAlgo(Simulator_A.getBuilding());  // The simplest algo ever (Shabat Elev).
+       //  ElevatorAlgo ex0_alg = new ShabatElev2Algo(Simulator_A.getBuilding()); // Shabat Elev with a minor twist
         ElevatorAlgo ex0_alg = new ShabatElev3Algo(Simulator_A.getBuilding());    // Shabat Elev with two trick - replace with your code;
         Simulator_A.initAlgo(ex0_alg); // init the algorithm to be used by the simulator
 

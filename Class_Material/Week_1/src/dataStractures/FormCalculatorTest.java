@@ -6,9 +6,11 @@ package dataStractures;
  * 1. (test1): few good / bad examples;
  * 2. (test2): a complex isForm example for testing that some complex form is actually in the proper form/
  * 3. (test3): a complex value of a From.
+ *
+ * Make sure you can transform the tests - the actual (proper) JUnit tests.
  */
 public class FormCalculatorTest {
-    public static String[] good_forms = {"3", "(-3)", "((1.5))", "(1.5*4)", "(2.5*(4-2))"};
+    public static String[] good_forms = {"3", "(-3)", "((1.73))", "(1.5*4)", "(2.5*(4-2))"};
     public static String[] bad_forms = {"*3", "(-3", "(1.3))", "(1.*2*3)", "(2.2*(4-2)"};
     public static String complex_form1 = "(" + good_forms[3] + "*" + good_forms[4] + ")";
     public static String complex_form2 = "(" + good_forms[2] + "*" + complex_form1 + ")";

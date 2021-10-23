@@ -16,6 +16,7 @@ public class FormCalculator {
      * For example: 3, (-1.2), (3+4), (3*(4-1)), (((1.5))*((1.5*4)*(2.5*(4-2))))
      * @param s
      * @return
+     * // ((1.5))*((1.5*4)*(2.5*(4-2)))
      */
     public static boolean isForm(String s) {
         if(DEBUG_mode) {
