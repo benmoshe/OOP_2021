@@ -1,4 +1,4 @@
-package complex_functions;//package Ex1;
+package complex_functions;
 
 /**
  * The interface represents a continuance function 

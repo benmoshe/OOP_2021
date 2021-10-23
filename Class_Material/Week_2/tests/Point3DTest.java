@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class Point3DTestTest {
+class Point3DTest {
 
     /**
      * test if the add (aka translate) method is working as expected - as a simple vector translation.

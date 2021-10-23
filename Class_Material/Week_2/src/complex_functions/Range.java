@@ -1,4 +1,4 @@
-package complex_functions;//package class5.Ex1;
+package complex_functions;
 /**
  * This class represents a simple 1D range of shape [min,max]
  * @author boaz_benmoshe

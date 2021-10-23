@@ -3,10 +3,8 @@
  * for 2D including Point-Line test
  */
 
- package gui;
-
+package gui;
 import java.io.Serializable;
-
 /**
  * This class represents a 3D point in space..
  */

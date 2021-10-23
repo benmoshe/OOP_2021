@@ -1,4 +1,4 @@
-package complex_functions;//package class5.Ex1;
+package complex_functions;
 
 /**
  * This class represents a simple sin(x) function (actually sin(f(x))).

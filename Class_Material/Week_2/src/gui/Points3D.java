@@ -60,6 +60,13 @@ public class Points3D extends ArrayList<Point3D> implements Serializable{
 
         return false;
     }
+
+    /**
+     * Return true iff for every Point in this collecrtion there is a Point on the other collection which is equal to and vice versa.
+     * In other words: test SET equals.
+     * @param oth
+     * @return
+     */
     public boolean equals(Object oth){
         boolean ans = false;
         if(oth!=null && oth instanceof Collection) {
@@ -78,7 +85,6 @@ public class Points3D extends ArrayList<Point3D> implements Serializable{
                 }
             }
         }
-
         return ans;
     }
 }

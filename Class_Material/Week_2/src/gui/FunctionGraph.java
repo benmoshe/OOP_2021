@@ -3,9 +3,7 @@ package gui; /** https://introcs.cs.princeton.edu/java/15inout/FunctionGraph.jav
  *  https://introcs.cs.princeton.edu/java/stdlib/StdDraw.java.html
  */
 
- import gui.StdDraw;
-
- import java.awt.Color;
+import java.awt.Color;
 import java.awt.Font;;
 
 public class FunctionGraph {

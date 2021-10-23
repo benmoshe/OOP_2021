@@ -129,13 +129,22 @@ public class Monom implements function {
 		}
 		return ans;
 	}
-	
+	@Override
 	public double f(double x) {
 		double ans=0;
 		double p = this.get_power();
 		ans = this.get_coefficient()*Math.pow(x, p);
 		return ans;
-	} 
+	}
+	@Override
+	public function initFromString(String s) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public function copy() {
+		return new Monom(this.toString());
+	}
 	//****************** Private Methods and Data *****************
 	
 
@@ -149,14 +158,6 @@ public class Monom implements function {
 	
 	private double _coefficient; 
 	private int _power;
-	@Override
-	public function initFromString(String s) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public function copy() {
-		return new Monom(this.toString());
-	}
+
 	
 }

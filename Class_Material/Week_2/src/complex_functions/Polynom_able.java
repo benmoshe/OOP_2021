@@ -1,4 +1,4 @@
-package complex_functions;//package class5.Ex1;
+package complex_functions;
 
 import java.util.Iterator;
 
