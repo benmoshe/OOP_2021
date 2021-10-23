@@ -1,6 +1,9 @@
+import vehicle.Driveble;
+import vehicle.PublicTransfer;
+
 import java.awt.geom.Point2D;
 
-public class Bus extends MotorVehicle implements Driveble , PublicTransfer  {
+public class Bus extends MotorVehicle implements Driveble, PublicTransfer {
 
     private static  final double busDelay = 0.3;
     private static final int minSeats = 20;
