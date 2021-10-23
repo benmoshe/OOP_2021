@@ -6,7 +6,7 @@ package geometrics2D;
  */
 public interface Shape {
     /** computes a none negative value (distance) between the closest
-     * point on this shape and the querey point ot
+     * point on this shape and the query point ot
      *
      * @param ot
      * @return

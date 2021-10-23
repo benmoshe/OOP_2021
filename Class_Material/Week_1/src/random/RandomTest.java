@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
  Minor change - for testing
 
+ // make sure you can transform thete tests to proper JUnit tests.
+
 
  */
 

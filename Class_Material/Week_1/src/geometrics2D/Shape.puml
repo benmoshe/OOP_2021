@@ -10,7 +10,7 @@ interface Shape {
 }
 
 class Point_2D implements Shape {
-    public static final Point_2D _OO = new Point_2D(0,0);
+    +public static final Point_2D _OO = new Point_2D(0,0);
     -double _x,_y;
 }
 class Circle_2D implements Shape {
