@@ -2,9 +2,13 @@ import gui.Point3D;
 import gui.Points3D;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Iterator;
+
+import static java.time.Duration.ofMillis;
+import static org.junit.jupiter.api.Assertions.assertTimeout;
 
 class Points3DTest {
     private Points3D _pp0, _pp1;
@@ -23,6 +27,7 @@ class Points3DTest {
     }
 
     @Test
+    @DisplayName("Save & Load tester")
     void saveAndLoad() {
         String file_name = "test_for_Points3D.obj";
         _pp0.save(file_name);
@@ -32,6 +37,7 @@ class Points3DTest {
     }
 
     @Test
+    //@Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
     void equals1() {
         Assertions.assertEquals(_pp0, _pp1);
         _pp0.add(Point3D.ORIGIN);
@@ -41,5 +47,13 @@ class Points3DTest {
         Assertions.assertEquals(_pp0, _pp1);
         _pp1.get(0).add(6,6,6);
         Assertions.assertNotEquals(_pp0, _pp1);
+    }
+    @Test
+    void runTimeTest() {
+        assertTimeout(ofMillis(10), () -> {
+            // Simulate task that takes more than 10 ms.
+            //Thread.sleep(100);
+            equals1();
+        });
     }
 }

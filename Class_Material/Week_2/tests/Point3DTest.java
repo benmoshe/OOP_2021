@@ -1,4 +1,3 @@
-
 import gui.Point3D;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
