@@ -18,7 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_3/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_3/T3-ItaiLash/src" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.9" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" scope="TEST">
       <library name="JUnit5.4">
