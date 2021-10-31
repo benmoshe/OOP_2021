@@ -1,0 +1,106 @@
+{
+  "_minFloor": -10,
+  "_maxFloor": 100,
+  "_elevators": [
+    {
+      "_id": 10,
+      "_speed": 9.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.1111111111111112,
+      "_openTime": 1.1111111111111112,
+      "_startTime": 1.6666666666666667,
+      "_stopTime": 1.6666666666666667
+    },
+    {
+      "_id": 11,
+      "_speed": 7.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.4285714285714286,
+      "_openTime": 1.4285714285714286,
+      "_startTime": 2.142857142857143,
+      "_stopTime": 2.142857142857143
+    },
+    {
+      "_id": 12,
+      "_speed": 5.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 13,
+      "_speed": 5.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 14,
+      "_speed": 3.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 15,
+      "_speed": 3.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 16,
+      "_speed": 1.5,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 17,
+      "_speed": 9.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.1111111111111112,
+      "_openTime": 1.1111111111111112,
+      "_startTime": 1.6666666666666667,
+      "_stopTime": 1.6666666666666667
+    },
+    {
+      "_id": 18,
+      "_speed": 9.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.1111111111111112,
+      "_openTime": 1.1111111111111112,
+      "_startTime": 1.6666666666666667,
+      "_stopTime": 1.6666666666666667
+    },
+    {
+      "_id": 19,
+      "_speed": 2.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    }
+  ]
+}

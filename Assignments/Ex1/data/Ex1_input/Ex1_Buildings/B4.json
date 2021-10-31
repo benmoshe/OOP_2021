@@ -1,0 +1,56 @@
+{
+  "_minFloor": -10,
+  "_maxFloor": 100,
+  "_elevators": [
+    {
+      "_id": 5,
+      "_speed": 1.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 6,
+      "_speed": 2.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    },
+    {
+      "_id": 7,
+      "_speed": 8.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.25,
+      "_openTime": 1.25,
+      "_startTime": 1.875,
+      "_stopTime": 1.875
+    },
+    {
+      "_id": 8,
+      "_speed": 6.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 1.6666666666666667,
+      "_openTime": 1.6666666666666667,
+      "_startTime": 2.5,
+      "_stopTime": 2.5
+    },
+    {
+      "_id": 9,
+      "_speed": 2.0,
+      "_minFloor": -10,
+      "_maxFloor": 100,
+      "_closeTime": 2.0,
+      "_openTime": 2.0,
+      "_startTime": 3.0,
+      "_stopTime": 3.0
+    }
+  ]
+}
