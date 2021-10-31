@@ -1,0 +1,26 @@
+{
+    "409-94-301": {
+        "manufacturer": "Kia",
+        "model": "Picanto",
+        "registration_plate": "409-94-301",
+        "weight": 959,
+        "max_speed": 173,
+        "__author__": "Simon Pikalov"
+    },
+    "548-38-301": {
+        "manufacturer": "Hyndai",
+        "model": "i10",
+        "registration_plate": "548-38-301",
+        "weight": 952,
+        "max_speed": 163,
+        "__author__": "Simon Pikalov"
+    },
+    "000-38-000": {
+        "manufacturer": "Misubushi",
+        "model": "space-star",
+        "registration_plate": "000-38-000",
+        "weight": 865,
+        "max_speed": 173,
+        "__author__": "Simon Pikalov"
+    }
+}
