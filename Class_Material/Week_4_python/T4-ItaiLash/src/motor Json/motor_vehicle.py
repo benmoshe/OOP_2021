@@ -1,3 +1,5 @@
+__author__ = "Simon Pikalov"
+
 class MotorVehicle(object):
 
     def __init__(self, manufacturer: str = None, model: str = None, registration_plate: str = None,
@@ -14,7 +16,7 @@ class MotorVehicle(object):
         self.registration_plate = registration_plate
         self.weight = weight
         self.max_speed = max_speed
-        self.__author__ = "Itai Lashover"
+        self.__author__ = "Simon Pikalov"
 
     def __str__(self) -> str:
         return f"str : MotorVehicle manufacturer:{self.manufacturer}, model:{self.model}, registration_plate:{self.registration_plate}, weight:{self.weight}, max_speed:{self.max_speed}"
