@@ -1,0 +1,57 @@
+Ex1 (OOP) Simulator log: stage data/B2.json,  data/Ex1_Calls_case_2_b.csv
+0.0,OOP_Ex1_Elevator_Simulator
+0.0,Simulated Building, Building [-2,10]
+0) ex1.Elevator_A, Elev_, id,0,  speed, 1.0, open: 2.0,  start: 3.0, close: 2.0,  stop: 3.0
+1) ex1.Elevator_A, Elev_, id,1,  speed, 2.0, open: 2.0,  start: 3.0, close: 2.0,  stop: 3.0
+
+0.0,Simulated Period starTime,0.0,  endTime,200.56754743307536,  dt,1.0
+0.0,Simulated  calls,Elevator log, size: 10
+0.0,**** Simulation starts!! ****
+1.0,Elevator call,0.437472729039321,0,-1,1,0, got allocated to elevator, 0
+1.0,Elev,0,  arrived at src, 0, Elevator call,0.437472729039321,0,-1,2,0
+1.0, elevID,0,  pos,0,  cmd, goto,-1
+3.0,Elevator call,2.2094056301593525,0,-1,1,0, got allocated to elevator, 0
+, elevID,0,  pos,0,  cmd, stop,0
+11.0,Elev,0,  arrived at src, 0, Elevator call,2.2094056301593525,0,-1,2,0
+11.0, elevID,0,  pos,0,  cmd, goto,-1
+19.0,Elevator call,18.77299317966884,-1,-2,1,0, got allocated to elevator, 0
+20.0,Elevator call,19.590869649656987,0,7,1,1, got allocated to elevator, 1
+20.0,Elev,1,  arrived at src, 0, Elevator call,19.590869649656987,0,7,2,1
+20.0, elevID,1,  pos,0,  cmd, goto,7
+22.0,Elev,0,  arrived at dest, -1, this call is done!, Elevator call,0.437472729039321,0,-1,3,0, Done, dt, 21.56252727096068
+22.0,Elev,0,  arrived at dest, -1, this call is done!, Elevator call,2.2094056301593525,0,-1,3,0, Done, dt, 19.790594369840647
+22.0,Elev,0,  arrived at src, -1, Elevator call,18.77299317966884,-1,-2,2,0
+22.0, elevID,0,  pos,-1,  cmd, goto,-2
+30.0,Elevator call,29.579433566814906,0,1,1,0, got allocated to elevator, 0
+33.0,Elev,0,  arrived at dest, -2, this call is done!, Elevator call,18.77299317966884,-1,-2,3,0, Done, dt, 14.227006820331159
+33.0, elevID,0,  pos,-2,  cmd, goto,0
+34.0,Elevator call,33.242673193933555,10,0,1,1, got allocated to elevator, 1
+34.0,Elev,1,  arrived at dest, 7, this call is done!, Elevator call,19.590869649656987,0,7,3,1, Done, dt, 14.409130350343013
+34.0, elevID,1,  pos,7,  cmd, goto,10
+45.0,Elev,0,  arrived at src, 0, Elevator call,29.579433566814906,0,1,2,0
+45.0, elevID,0,  pos,0,  cmd, goto,1
+46.0,Elev,1,  arrived at src, 10, Elevator call,33.242673193933555,10,0,2,1
+46.0, elevID,1,  pos,10,  cmd, goto,0
+53.0,Elevator call,52.96277472128405,3,-1,1,0, got allocated to elevator, 0
+56.0,Elev,0,  arrived at dest, 1, this call is done!, Elevator call,29.579433566814906,0,1,3,0, Done, dt, 26.420566433185094
+56.0, elevID,0,  pos,1,  cmd, goto,3
+61.0,Elev,1,  arrived at dest, 0, this call is done!, Elevator call,33.242673193933555,10,0,3,1, Done, dt, 27.757326806066445
+65.0,Elevator call,64.38547514955395,2,-1,1,0, got allocated to elevator, 0
+68.0,Elev,0,  arrived at src, 3, Elevator call,52.96277472128405,3,-1,2,0
+68.0, elevID,0,  pos,3,  cmd, goto,2
+73.0,Elevator call,72.26161212799506,10,0,1,1, got allocated to elevator, 1
+73.0, elevID,1,  pos,0,  cmd, goto,10
+79.0,Elev,0,  arrived at src, 2, Elevator call,64.38547514955395,2,-1,2,0
+79.0, elevID,0,  pos,2,  cmd, goto,-1
+81.0,Elevator call,80.56754743307536,-1,-2,1,0, got allocated to elevator, 0
+88.0,Elev,1,  arrived at src, 10, Elevator call,72.26161212799506,10,0,2,1
+88.0, elevID,1,  pos,10,  cmd, goto,0
+92.0,Elev,0,  arrived at dest, -1, this call is done!, Elevator call,52.96277472128405,3,-1,3,0, Done, dt, 39.03722527871595
+92.0,Elev,0,  arrived at dest, -1, this call is done!, Elevator call,64.38547514955395,2,-1,3,0, Done, dt, 27.614524850446045
+92.0,Elev,0,  arrived at src, -1, Elevator call,80.56754743307536,-1,-2,2,0
+92.0, elevID,0,  pos,-1,  cmd, goto,-2
+103.0,Elev,0,  arrived at dest, -2, this call is done!, Elevator call,80.56754743307536,-1,-2,3,0, Done, dt, 22.43245256692464
+103.0,Elev,1,  arrived at dest, 0, this call is done!, Elevator call,72.26161212799506,10,0,3,1, Done, dt, 30.738387872004935
+104.0,************* Simulation Ended ************
+Code Owners,123456789,  Building_file,data/B2.json,  Calls,data/Ex1_Calls_case_2_b.csv
+Total waiting time: 239.0,  average waiting time per call: 23.9,  unCompleted calls,0,  certificate, -147713972
