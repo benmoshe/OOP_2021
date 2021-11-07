@@ -3,7 +3,7 @@
   "_maxFloor": 10,
   "_elevators": [
     {
-      "_id": 1,
+      "_id": 0,
       "_speed": 1.0,
       "_minFloor": -2,
       "_maxFloor": 10,
@@ -13,7 +13,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 2,
+      "_id": 1,
       "_speed": 2.0,
       "_minFloor": -2,
       "_maxFloor": 10,

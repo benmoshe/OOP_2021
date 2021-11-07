@@ -3,7 +3,7 @@
   "_maxFloor": 100,
   "_elevators": [
     {
-      "_id": 10,
+      "_id": 0,
       "_speed": 9.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -13,7 +13,7 @@
       "_stopTime": 1.6666666666666667
     },
     {
-      "_id": 11,
+      "_id": 1,
       "_speed": 7.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -23,7 +23,7 @@
       "_stopTime": 2.142857142857143
     },
     {
-      "_id": 12,
+      "_id": 2,
       "_speed": 5.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -33,7 +33,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 13,
+      "_id": 3,
       "_speed": 5.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -43,7 +43,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 14,
+      "_id": 4,
       "_speed": 3.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -53,7 +53,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 15,
+      "_id": 5,
       "_speed": 3.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -63,7 +63,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 16,
+      "_id": 6,
       "_speed": 1.5,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -73,7 +73,7 @@
       "_stopTime": 3.0
     },
     {
-      "_id": 17,
+      "_id": 7,
       "_speed": 9.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -83,7 +83,7 @@
       "_stopTime": 1.6666666666666667
     },
     {
-      "_id": 18,
+      "_id": 8,
       "_speed": 9.0,
       "_minFloor": -10,
       "_maxFloor": 100,
@@ -93,7 +93,7 @@
       "_stopTime": 1.6666666666666667
     },
     {
-      "_id": 19,
+      "_id": 9,
       "_speed": 2.0,
       "_minFloor": -10,
       "_maxFloor": 100,
