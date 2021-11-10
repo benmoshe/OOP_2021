@@ -1,6 +1,3 @@
-from abc import ABC, abstractmethod
-
-
 class Employee:
     emp_count = 0
 
@@ -20,9 +17,9 @@ class Employee:
     def display_count(self):
         print("Total Employee" + Employee.empCount)
 
-    def __dict__(self):
-        return {"id": self.id, "first_name": self.f_name, "last_name": self.l_name, "salary": self.salary,
-                "lang_list": self.lang_list}
+    # def __dict__(self):
+    #     return {"id": self.id, "first_name": self.f_name, "last_name": self.l_name, "salary": self.salary,
+    #             "lang_list": self.lang_list}
 
     def __eq__(self, o: object) -> bool:
         if isinstance(o, Employee):
@@ -32,16 +29,3 @@ class Employee:
     def __str__(self):
         return f"Employee: id:{self.id}, name:{self.full_name()}, salary:{self.salary}, languages:{self.lang_list}"
 
-
-    # @abstractmethod
-    # def __str__(self):
-    #     pass
-    #
-    # @abstractmethod
-    # def __repr__(self):
-    #     pass
-
-
-if __name__ == '__main__':
-    emp = Employee()
-    print(emp.__dict__)

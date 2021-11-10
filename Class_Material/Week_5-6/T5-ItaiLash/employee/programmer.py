@@ -20,7 +20,7 @@ class Programmer(Employee):
 
 
 if __name__ == '__main__':
-    p1 = Programmer("316485176", "Itai", "Lashover", 15000, list(("Java", "Python", "C", "C++")))
+    p1 = Programmer("22222222", "Avraham", "Avi", 15000, list(("Java", "Python", "C", "C++")))
     p2 = Programmer("11111111", "Israel", "Israeli", 10000, ["Java", "C"])
     print(p1)
     print(p2)
@@ -29,4 +29,4 @@ if __name__ == '__main__':
     p_list.sort()
     print(p_list)
     p1+1000
-    print(p1)
+    print(p1.__dict__)

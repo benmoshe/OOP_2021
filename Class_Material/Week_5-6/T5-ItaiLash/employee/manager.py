@@ -21,14 +21,9 @@ class Manager(Programmer):
         return f"Programmer: id:{self.id}, name:{self.full_name()}, salary:{self.salary}, languages:{self.lang_list}," \
                f" employees:{self.get_employees()}"
 
-    # def __dict__(self):
-    #     dic = super().__dict__()
-    #     dic["employees"] = self.get_employees()
-    #     return dic
-
 
 if __name__ == '__main__':
-    p1 = Programmer("316485176", "Itai", "Lashover", 15000, list(("Java", "Python", "C", "C++")))
+    p1 = Programmer("33333333", "Avi", "Avraham", 15000, list(("Java", "Python", "C", "C++")))
     p2 = Programmer("11111111", "Israel", "Israeli", 10000, ["Java", "C"])
     m1 = Manager("2222222", "A", "B", 30000, ["Java"], {p1.id: p1, p2.id: p2})
     print(m1.get_employees())

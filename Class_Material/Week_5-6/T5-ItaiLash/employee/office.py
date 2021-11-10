@@ -37,7 +37,7 @@ class Office:
     def save_to_file(self, file_name: str) -> None:
         try:
             with open(file_name, "w") as f:
-                json.dump(self.employees, default=lambda x: x.__dict__(), indent=4, fp=f)
+                json.dump(self.employees, default=lambda x: x.__dict__, indent=4, fp=f)
         except IOError as e:
             print(e)
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     office.init_from_file("office.txt")
     print(office)
     # office = Office()
-    # p1 = Programmer("316485176", "Itai", "lashover", 15000, list(("Java", "Python", "C", "C++")))
+    # p1 = Programmer("33333333", "Avi", "Avraham,", 15000, list(("Java", "Python", "C", "C++")))
     # p2 = Programmer("11111111", "Israel", "Israeli", 10000, ["Java", "C"])
     # m1 = Manager("2222222", "A", "B", 30000, ["Java"], {p1.id: p1, p2.id: p2})
     # office + m1 + p1 + p2
