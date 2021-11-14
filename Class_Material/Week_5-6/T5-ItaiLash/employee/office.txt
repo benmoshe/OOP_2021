@@ -1,0 +1,62 @@
+{
+    "2222222": {
+        "_Employee__emp_id": 3,
+        "id": "2222222",
+        "f_name": "A",
+        "l_name": "B",
+        "salary": 30000,
+        "lang_list": [
+            "Java"
+        ],
+        "prog_dic": {
+            "316485176": {
+                "_Employee__emp_id": 1,
+                "id": "316485176",
+                "f_name": "Itai",
+                "l_name": "lashover",
+                "salary": 15000,
+                "lang_list": [
+                    "Java",
+                    "Python",
+                    "C",
+                    "C++"
+                ]
+            },
+            "11111111": {
+                "_Employee__emp_id": 2,
+                "id": "11111111",
+                "f_name": "Israel",
+                "l_name": "Israeli",
+                "salary": 10000,
+                "lang_list": [
+                    "Java",
+                    "C"
+                ]
+            }
+        }
+    },
+    "316485176": {
+        "_Employee__emp_id": 1,
+        "id": "316485176",
+        "f_name": "Itai",
+        "l_name": "lashover",
+        "salary": 15000,
+        "lang_list": [
+            "Java",
+            "Python",
+            "C",
+            "C++"
+        ]
+    },
+    "11111111": {
+        "_Employee__emp_id": 2,
+        "id": "11111111",
+        "f_name": "Israel",
+        "l_name": "Israeli",
+        "salary": 10000,
+        "lang_list": [
+            "Java",
+            "C"
+        ]
+    }
+}

@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_3/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Class_Material/Week_3/T3-ItaiLash/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/venv2" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8 (OOP_2021)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
