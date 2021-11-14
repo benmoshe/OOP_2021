@@ -1,8 +1,5 @@
 package class5;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 /**
  * output #1:
  * 0) BBBBBBBBBB
