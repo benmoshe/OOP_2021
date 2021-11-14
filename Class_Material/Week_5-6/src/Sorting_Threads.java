@@ -13,7 +13,6 @@ public class Sorting_Threads {
         int i=0;
         int j=0;
         int r=0;
-
         while (i < a.length && j < b.length) {
             if (a[i] <= b[j]) {
                 result[r]=a[i];
