@@ -1,4 +1,4 @@
-package threads.basic;
+package threads.moving_cars;
 
 public class Main {
     public static final int screenSize = 60;

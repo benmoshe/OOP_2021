@@ -1,4 +1,4 @@
-package threads.basic;
+package threads.moving_cars;
 import java.lang.Thread;
 public class CarRunnable implements Runnable{
     private int x = 0;
