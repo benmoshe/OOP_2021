@@ -1,5 +1,6 @@
 package threads.password_cracker;
 
+import java.util.concurrent.*;
 import java.time.Duration;
 import java.time.Instant;
 
@@ -35,7 +36,7 @@ public class Main {
 
         Instant finish = Instant.now();
         long time = Duration.between(start, finish).toSeconds();
-        System.out.println("it took: " + time + "seconds");
+        System.out.println("it took: " + time + " seconds");
 
         CrackerRunnable.cracked = false;
 
@@ -50,6 +51,30 @@ public class Main {
         }
         finish = Instant.now();
         time = Duration.between(start, finish).toSeconds();
-        System.out.println("it took: " + time + "seconds");
+        System.out.println("it took: " + time + " seconds");
+
+        CrackerRunnable.cracked = false;
+
+        ExecutorService e = Executors.newFixedThreadPool(2);
+        start = Instant.now();
+        e.execute(new CrackerRunnable(safe, "0", "azzz"));
+        e.execute(new CrackerRunnable(safe, "azzz", "9zzzz"));
+        e.execute(new CrackerRunnable(safe, "9zzzz", "zzzzz"));
+        e.execute(new CrackerRunnable(safe, "zzzzz", "9zzzzz"));
+        e.execute(new CrackerRunnable(safe, "9zzzzz", "fzzzzz"));
+        e.execute(new CrackerRunnable(safe, "fzzzzz", "zzzzzz"));
+
+        e.shutdown();
+        try {
+            if (!e.awaitTermination(60, TimeUnit.SECONDS)) {
+                e.shutdownNow();
+            }
+        } catch (InterruptedException ex) {
+            e.shutdownNow();
+            Thread.currentThread().interrupt();
+        }
+        finish = Instant.now();
+        time = Duration.between(start, finish).toSeconds();
+        System.out.println("it took: " + time + " seconds");
     }
 }

@@ -13,7 +13,7 @@ public class Safe {
     private String password;
 
     public Safe() {
-        System.out.println("enter password with no capital letters up to 10 chars:");
+        System.out.println("enter password with no capital letters up to 6 chars:");
         this.password = String.valueOf(console.readPassword());
 
         while (password.length() > 6 || !textPattern.matcher(password).matches()) {

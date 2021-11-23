@@ -1,3 +1,8 @@
+/**
+ * @author achiyazigi
+ * @since 2021-11-23
+ * {@link https://github.com/achiyazigi}
+ */
 package threads.password_cracker;
 
 public class CrackerRunnable implements Runnable {
@@ -38,13 +43,7 @@ public class CrackerRunnable implements Runnable {
     public void run() {
         String guess = this.startingString;
         while (!cracked && !this.safe.open(guess) && !guess.equals(this.endingString)) {
-            // System.out.println(guess);
             guess = getNextGuess(guess);
-            // try {
-            // Thread.sleep(50);
-            // } catch (InterruptedException e) {
-            // e.printStackTrace();
-            // }
         }
         if (this.safe.open(guess)) {
             System.out.println("cracked! " + guess + " by: " + Thread.currentThread().getName());
