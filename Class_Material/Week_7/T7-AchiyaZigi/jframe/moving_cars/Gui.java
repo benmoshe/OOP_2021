@@ -1,21 +1,20 @@
 package jframe.moving_cars;
 
-import java.awt.Color;
 import java.awt.Graphics;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Gui extends JFrame {
-    
-    private class CarPanel extends JPanel{
+
+    private class CarPanel extends JPanel {
         CarRunnable[] cars;
-        public CarPanel(CarRunnable[] cars){
+
+        public CarPanel(CarRunnable[] cars) {
             this.cars = cars;
-            
+
         }
+
         @Override
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
@@ -25,10 +24,12 @@ public class Gui extends JFrame {
             }
         }
     }
+
     public static final int WIDTH = 1080;
     public static final int HEIGHT = (int) (WIDTH / 1.6);
     CarRunnable[] cars;
     private CarPanel carPanel;
+
     public Gui(CarRunnable[] cars) {
         super();
         this.cars = cars;

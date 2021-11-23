@@ -24,8 +24,8 @@ public class Main {
         boolean collided = false;
         // monitoring:
         while (toLeft.isAlive() || toRight.isAlive()) {
-            
-            //collision:
+
+            // collision:
             if (Math.abs(carToLeft.getX() - carToRight.getX()) < 100 && !collided) {
                 carToLeft.setDir(carToLeft.getDir() * -1);
                 carToRight.setDir(carToRight.getDir() * -1);
