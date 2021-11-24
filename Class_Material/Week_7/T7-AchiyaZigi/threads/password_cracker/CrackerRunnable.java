@@ -10,7 +10,9 @@ public class CrackerRunnable implements Runnable {
     String startingString;
     String endingString;
     Safe safe;
-    static boolean cracked = false;
+    String guess;
+
+    public static boolean cracked = false;
 
     private static char getNextChar(char c) {
         if (c == '9') {
@@ -36,19 +38,25 @@ public class CrackerRunnable implements Runnable {
     public CrackerRunnable(Safe safe, String startingString, String endingString) {
         this.startingString = startingString;
         this.endingString = endingString;
+        this.guess = startingString;
         this.safe = safe;
     }
 
     @Override
     public void run() {
-        String guess = this.startingString;
         while (!cracked && !this.safe.open(guess) && !guess.equals(this.endingString)) {
             guess = getNextGuess(guess);
         }
         if (this.safe.open(guess)) {
             System.out.println("cracked! " + guess + " by: " + Thread.currentThread().getName());
             cracked = true;
+        } else {
+            this.guess = this.startingString;
         }
+    }
+
+    public String getGuess() {
+        return guess;
     }
 
 }

@@ -19,7 +19,6 @@ public class Safe {
         while (password.length() > 6 || !textPattern.matcher(password).matches()) {
             System.out.println("bad password please try again:");
             this.password = String.valueOf(console.readPassword());
-            // this.password = sc.nextLine();
         }
         System.out.println("password saved");
     }

@@ -21,11 +21,11 @@ public class Main {
         mainFrame.setSize(WIDTH, HEIGHT);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        mainFrame.add(new DrawPanel());
+        // mainFrame.add(new DrawPanel());
 
         PaintPanel paintPanel = new PaintPanel();
         paintPanel.setPreferredSize(new Dimension(Main.WIDTH, (Main.HEIGHT * 3) / 4));
-        // mainFrame.add(new PaintPanel(), BorderLayout.CENTER);
+        mainFrame.add(new PaintPanel(), BorderLayout.CENTER);
 
         JLabel title = new JLabel("Achiya's Paint Program", JLabel.CENTER);
         title.setFont(new Font("Arial", Font.PLAIN, 32));
