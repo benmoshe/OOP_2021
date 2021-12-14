@@ -1,0 +1,39 @@
+{
+    "students": [
+        {
+            "id": 316691342,
+            "first_name": "alex",
+            "last_name": "ben david",
+            "year": 3,
+            "address": {
+                "country": "ruassia",
+                "city": "moscow",
+                "street": "main road st",
+                "number": 51
+            },
+            "future_courses": ["algebra", "infi b", "advanced programming a"],
+            "grades": {
+                "linear alg a": 92,
+                "software engineering": 76,
+                "infi a": 80
+            }
+        },
+        {
+            "id": 361945344,
+            "first_name": "ravit",
+            "last_name": "saadon",
+            "year": 1,
+            "address": {
+                "country": "israel",
+                "city": "rishon lezion",
+                "street": "vitzman",
+                "number": 9
+            },
+            "future_courses": ["algebra", "infi a", "infi b"],
+            "grades": {
+                "infi a": 80,
+                "logics": 100
+            }
+        }
+    ]
+}
