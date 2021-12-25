@@ -4,23 +4,26 @@ from GraphAlgo import GraphAlgo
 
 def check():
     """
-    Graph: |V|=4 , |E|=5
-    {0: 0: |edges out| 1 |edges in| 1, 1: 1: |edges out| 3 |edges in| 1, 2: 2: |edges out| 1 |edges in| 1, 3: 3: |edges out| 0 |edges in| 2}
+    Graph: |V|=4, |E|=5
+    {0: 0: |edges_out| 1 |edges in| 1, 1: 1: |edges_out| 3 |edges in| 1, 2: 2: |edges_out| 1 |edges in| 1, 3: 3: |edges_out| 0 |edges in| 2}
     {0: 1}
     {0: 1.1, 2: 1.3, 3: 10}
     (3.4, [0, 1, 2, 3])
     (2.8, [0, 1, 3])
     (inf, [])
+    (1, 1.8)
     2.062180280059253 [1, 10, 7]
     17.693921758901507 [47, 46, 44, 43, 42, 41, 40, 39, 15, 16, 17, 18, 19]
     11.51061380461898 [20, 21, 32, 31, 30, 29, 14, 13, 3, 2]
     inf []
-    (7, 6.806805834715163)
-    ([1,3,4,2],3.5)
+    ([1, 9, 2, 3], 2.370613295323088)
+    (1, 4.0)
+    ([1, 2, 3, 4], 4.5)
     """
     check0()
     check1()
     check2()
+    check3()
 
 
 def check0():
@@ -67,7 +70,7 @@ def check2():
       :return:
       """
     g_algo = GraphAlgo()
-    file = '../data/A5.json'
+    file = '../data/A5'
     g_algo.load_from_json(file)
     g_algo.get_graph().remove_edge(13, 14)
     g_algo.save_to_json(file + "_edited")
