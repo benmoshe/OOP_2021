@@ -31,11 +31,6 @@ public class Client {
         clientSocket.close();
     }
 
-    /**
-     * Receives game info from server
-     * 
-     * @return if respond has been received: the game info as json. else: null
-     */
     public String getAgents() {
         String res = "";
         try {
@@ -47,17 +42,19 @@ public class Client {
 
     }
 
-    public void addAgent(String jsonOfNode) {
+    public String addAgent(String jsonOfNode) {
+        String res2 = "false";
         try {
             String res1 = sendMessage("addAgent");
             if (res1.equals("getNode")) {
 
-                String res2 = sendMessage(jsonOfNode);
+                res2 = sendMessage(jsonOfNode);
             }
         } catch (IOException e) {
             System.out.println("problem with the server. make sure server is running");
             e.printStackTrace();
         }
+        return res2;
     }
 
     public void start() {
@@ -154,17 +151,18 @@ public class Client {
             res = sendMessage("isRunning");
         } catch (IOException e) {
             System.err.println("ERR: no connection - to the server - it is down!");
-            //e.printStackTrace();
+            // e.printStackTrace();
         }
         return res;
     }
+
     public String getInfo() {
-    	 String res = null;
-         try {
-             res = sendMessage("getInfo");
-         } catch (IOException e) {
-             e.printStackTrace();
-         }
-         return res;
+        String res = null;
+        try {
+            res = sendMessage("getInfo");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return res;
     }
 }

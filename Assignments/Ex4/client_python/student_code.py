@@ -52,7 +52,7 @@ max_y = max(list(graph.Nodes), key=lambda n: n.pos.y).pos.y
 def scale(data, min_screen, max_screen, min_data, max_data):
     """
     get the scaled data with proportions min_data, max_data
-    relative to min and max screen dimensions
+    relative to min and max screen dimentions
     """
     return ((data - min_data) / (max_data-min_data)) * (max_screen - min_screen) + min_screen
 
@@ -69,9 +69,9 @@ def my_scale(data, x=False, y=False):
 radius = 15
 
 client.add_agent("{\"id\":0}")
-#client.add_agent("{\"id\":1}")
-#client.add_agent("{\"id\":2}")
-#client.add_agent("{\"id\":3}")
+# client.add_agent("{\"id\":1}")
+# client.add_agent("{\"id\":2}")
+# client.add_agent("{\"id\":3}")
 
 # this commnad starts the server - the game is running now
 client.start()
@@ -154,7 +154,7 @@ while client.is_running() == 'true':
     # choose next edge
     for agent in agents:
         if agent.dest == -1:
-            next_node = (agent.src -1) % 11
+            next_node = (agent.src - 1) % len(graph.Nodes)
             client.choose_next_edge(
                 '{"agent_id":'+str(agent.id)+', "next_node_id":'+str(next_node)+'}')
             ttl = client.time_to_end()
