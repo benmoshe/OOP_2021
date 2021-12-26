@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 """
+@author AchiyaZigi
 OOP - Ex4
 Do NOT change this file - it should be remained "AS IS" - as it communicating with the "server"
 """
@@ -12,7 +14,7 @@ class Client:
     def start_connection(self, ip, port):
         """
         use with ip='127.0.0.1' , port=6666
-        to start a new connection to the game serverl
+        to start a new connection to the game server
         """
         self.soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.soc.connect((ip, port))
