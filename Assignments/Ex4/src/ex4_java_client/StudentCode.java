@@ -1,6 +1,4 @@
-package ex4_java_client;
-
-/**
+package ex4_java_client; /**
  * @author AchiyaZigi
  * A trivial example for starting the server and running all needed commands
  */

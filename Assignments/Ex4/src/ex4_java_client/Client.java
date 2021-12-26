@@ -1,6 +1,4 @@
-package ex4_java_client;
-
-/**
+package ex4_java_client; /**
  * @author AchiyaZigi
  * @since 0.0
  * @version 1.0
