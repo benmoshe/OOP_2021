@@ -1,0 +1,42 @@
+3.1 
+a. the constructor will get an input graph,
+    and instanciate a new server with the input graph
+b. each class method will wrap the server methoeds with syncronize(server).
+    this will ensure that 2 or more threads won't access any method at the same time.
+    this wrap is only needed in the methods that changes the structure of the graph.
+
+3.2
+a. once instaciated, a thread will start running in background.
+    the thread psudo code will be:
+----------------------------
+    
+        time = current_time()
+        while(true):
+            if(current_time() - time >= 1s):
+                counter = 0
+            if(counter > 100):
+                throw runtime exception...
+
+----------------------------
+    where in class it will look like so:
+----------------------------
+        counter = 0
+        server _server
+        constructor(g):
+            _server = new server(g)
+            thread.start()
+
+        syncronized inc():
+            counter++
+            
+        syncronized dec():
+            counter--
+
+        some_method(...):
+            inc()
+            res = _server.some_method(...)
+            dec()
+            return res
+        
+        
+ 
