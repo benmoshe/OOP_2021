@@ -2,4 +2,6 @@ OOP - Ex4
 This file contains all the needed links for Ex4:
 1. Github: https://github.com/benmoshe/OOP_2021/tree/main/Assignments/Ex4
 2. Main document: https://docs.google.com/document/d/1LrXIX2pLvRIVHdSqVIimCCxL7UBMaogAcLKfr2dOjHk/edit?usp=sharing
-3. Report site: TBD
+3. Report results cases [0-15]: https://docs.google.com/forms/d/e/1FAIpQLSfTG4TWwgVAlJXCrrXXVMnpvNdaeSTh72lG1fwkcR-3TMjmzQ/viewform?usp=sf_link
+4. See all results: https://docs.google.com/spreadsheets/d/1t89o0uuPqSvhEhQddMJkbZBLCIeEu3o45dWVb8WfMIU/edit?usp=sharing
+5. Submit your Ex4 (github link): https://docs.google.com/forms/d/e/1FAIpQLSdv2M6IyT0y2ivSVLeHSikDU-bq4l5MFy4AclFthiFVIPkBOA/viewform?usp=sf_link
