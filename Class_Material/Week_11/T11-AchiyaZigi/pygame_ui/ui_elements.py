@@ -10,11 +10,13 @@ class Button:
     simple button, base for everything
     """
 
-    def __init__(self, title: str, size: tuple[int, int], color=Color(155, 230, 250)) -> None:
+    default_size: tuple[int, int] = None
+
+    def __init__(self, title: str, size=default_size, color=Color(155, 230, 250)) -> None:
         self.title = title
-        self.size = size
+        self.size = size if size != None else Button.default_size
         self.color = color
-        self.rect = Rect((0, 0), size)
+        self.rect = Rect((0, 0), self.size)
         self.on_click = []
         self.show = True
         self.disabled = False
@@ -47,10 +49,13 @@ class MenuItem(Button):
     """
     drop down to bottom side
     """
+    default_size: tuple[int, int] = Button.default_size
 
-    def __init__(self, title: str, size, buttons: list[Button], color=Color(155, 230, 250)) -> None:
+    def __init__(self, title: str, size=None, buttons: list[Button] = [], color=Color(155, 230, 250)) -> None:
+        size = size if size != None else MenuItem.default_size
         super().__init__(title, size, color=color)
-        max_w = max(buttons, key=lambda b: b.rect.width).rect.width
+        max_w = max(buttons, key=lambda b: b.rect.width).rect.width if len(
+            buttons) > 0 else 0
         sum_h = sum(b.rect.height for b in buttons)
         self.menu_rect = Rect((0, 0), (max_w, sum_h))
         self.show_menu = False
@@ -59,6 +64,17 @@ class MenuItem(Button):
 
         def toggle_menu():
             self.show_menu = not self.show_menu
+
+        def show_only(me):
+            def wraper():
+                for button in self.buttons:
+                    if me != button and type(button) == SubMenuItem:
+                        sub_menu_item: SubMenuItem = button
+                        sub_menu_item.show_menu = False
+            return wraper
+        for button in self.buttons:
+
+            button.add_click_listener(show_only(button))
         self.add_click_listener(toggle_menu)
 
     def check(self):
@@ -76,7 +92,7 @@ class MenuItem(Button):
                 b.render(surface, (self.menu_rect.left, last_button_rect.bottom))
                 last_button_rect = b.rect
                 b.disabled = False
-            pygame.draw.rect(surface, self.color, self.menu_rect, width=5)
+            # pygame.draw.rect(surface, self.color, self.menu_rect, width=5)
         else:
             for b in self.buttons:
                 b.disabled = True
@@ -86,9 +102,13 @@ class SubMenuItem(MenuItem):
     """
     dropdown to the right
     """
+    add_right_sign = True
 
     def render(self, surface: Surface, pos):
         Button.render(self, surface, pos)
+        if SubMenuItem.add_right_sign:
+            pygame.draw.polygon(surface, self.color,
+                                (self.rect.topright, self.rect.bottomright, (self.rect.right+10, self.rect.centery)))
         if self.show_menu:
             self.menu_rect.topleft = self.rect.topright
             last_button_bottom = self.menu_rect.top
@@ -96,7 +116,7 @@ class SubMenuItem(MenuItem):
                 b.render(surface, (self.menu_rect.left, last_button_bottom))
                 last_button_bottom = b.rect.bottom
                 b.disabled = False
-            pygame.draw.rect(surface, self.color, self.menu_rect, width=5)
+            # pygame.draw.rect(surface, self.color, self.menu_rect, width=5)
         else:
             for b in self.buttons:
                 b.disabled = True
@@ -112,6 +132,16 @@ class MenuBar:
         max_h = max(m.rect.height for m in menu_items)
         sum_w = sum(m.rect.width for m in menu_items)
         self.rect = Rect((0, 0), (sum_w, max_h))
+
+        def show_only(me):
+            def wraper():
+                for menu_item in self.menu_items:
+                    if me != menu_item:
+                        menu_item.show_menu = False
+            return wraper
+        for menu_item in self.menu_items:
+
+            menu_item.add_click_listener(show_only(menu_item))
 
     def check(self):
         for m in self.menu_items:
